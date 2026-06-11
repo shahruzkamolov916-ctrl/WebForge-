@@ -1,0 +1,310 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:'Segoe UI',sans-serif;
+    background:linear-gradient(135deg,#0f172a,#1e293b);
+    color:#fff;
+    min-height:100vh;
+}
+
+header{
+    position:sticky;
+    top:0;
+    z-index:1000;
+
+    padding:20px;
+
+    background:rgba(15,23,42,.8);
+    backdrop-filter:blur(15px);
+
+    border-bottom:1px solid rgba(255,255,255,.1);
+}
+
+.logo{
+    text-align:center;
+    font-size:40px;
+    font-weight:800;
+
+    background:linear-gradient(
+        90deg,
+        #6ee7ff,
+        #ff9de1
+    );
+
+    -webkit-background-clip:text;
+    -webkit-text-fill-color:transparent;
+}
+
+nav{
+    margin-top:15px;
+
+    display:flex;
+    justify-content:center;
+    gap:25px;
+    flex-wrap:wrap;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    transition:.3s;
+}
+
+nav a:hover{
+    color:#6ee7ff;
+}
+
+/* HERO */
+
+.hero-banner{
+    max-width:1700px;
+    margin:40px auto;
+    padding:60px;
+
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap:60px;
+
+    background:#202b46;
+    border-radius:30px;
+}
+
+.hero-content{
+    flex:1;
+}
+
+.hero-content h1{
+    font-size:90px;
+    font-weight:800;
+    line-height:1.1;
+
+    margin-bottom:25px;
+
+    background:linear-gradient(
+        90deg,
+        #6ee7ff,
+        #ff9de1
+    );
+
+    -webkit-background-clip:text;
+    -webkit-text-fill-color:transparent;
+}
+
+.hero-content p{
+    font-size:28px;
+    color:#d1d5db;
+    line-height:1.5;
+
+    max-width:700px;
+
+    margin-bottom:40px;
+}
+
+.hero-buttons{
+    display:flex;
+    gap:20px;
+    flex-wrap:wrap;
+}
+
+.hero-image img{
+    width:800px;
+    max-width:100%;
+
+    border-radius:25px;
+
+    display:block;
+}
+
+/* BUTTONS */
+
+.btn{
+    display:inline-block;
+
+    padding:18px 40px;
+
+    border-radius:18px;
+
+    text-decoration:none;
+    color:white;
+
+    font-size:22px;
+    font-weight:700;
+
+    background:linear-gradient(
+        90deg,
+        #6ee7ff,
+        #ff9de1
+    );
+
+    transition:.3s;
+}
+
+.btn:hover{
+    transform:translateY(-5px);
+}
+
+/* CARDS */
+
+.categories{
+    width:90%;
+    max-width:1400px;
+    margin:auto;
+    padding-bottom:50px;
+}
+
+.card{
+    margin-bottom:25px;
+
+    padding:30px;
+
+    background:rgba(255,255,255,.05);
+
+    border-radius:25px;
+
+    backdrop-filter:blur(15px);
+
+    border:1px solid rgba(255,255,255,.08);
+}
+
+.card h2{
+    margin-bottom:15px;
+}
+
+.card p{
+    color:#cbd5e1;
+    margin-bottom:20px;
+}
+
+/* FOOTER */
+
+footer{
+    text-align:center;
+    padding:30px;
+    color:#cbd5e1;
+}
+
+/* CURSOR */
+
+.cursor{
+    position:fixed;
+
+    width:20px;
+    height:20px;
+
+    border:2px solid #6ee7ff;
+    border-radius:50%;
+
+    pointer-events:none;
+
+    transform:translate(-50%,-50%);
+
+    z-index:9999;
+
+    box-shadow:
+    0 0 15px #6ee7ff,
+    0 0 25px #ff9de1;
+}
+
+/* MOBILE */
+
+@media(max-width:1100px){
+
+    .hero-banner{
+        flex-direction:column;
+        text-align:center;
+    }
+
+    .hero-content h1{
+        font-size:55px;
+    }
+
+    .hero-content p{
+        font-size:22px;
+    }
+
+    .hero-buttons{
+        justify-content:center;
+    }
+}
+
+
+.card-content{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap:40px;
+}
+
+.card-text{
+    flex:1;
+}
+
+.card-text h2{
+    font-size:60px;
+    margin-bottom:20px;
+
+    background:linear-gradient(
+        90deg,
+        #6ee7ff,
+        #ff9de1
+    );
+
+    -webkit-background-clip:text;
+    -webkit-text-fill-color:transparent;
+}
+
+.card-text p{
+    font-size:24px;
+    color:#d1d5db;
+    margin-bottom:30px;
+    line-height:1.5;
+}
+
+.card-buttons{
+    display:flex;
+    gap:15px;
+    flex-wrap:wrap;
+}
+
+.hero-image2{
+    flex:1;
+    text-align:right;
+}
+
+.hero-image2 img{
+    width:700px;
+    max-width:100%;
+    border-radius:25px;
+    display:block;
+}
+
+@media (max-width:1100px){
+
+    .card-content{
+        flex-direction:column;
+        text-align:center;
+    }
+
+    .card-buttons{
+        justify-content:center;
+    }
+
+    .card-text h2{
+        font-size:45px;
+    }
+
+    .hero-image2{
+        text-align:center;
+    }
+}
+.card-buttons{
+    display:flex;
+    gap:15px;
+    flex-wrap:wrap;
+    margin-top:20px;
+}
